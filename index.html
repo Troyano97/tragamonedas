@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slot machine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header id="encabezado">
+        <div id="saldo-pesos">Pesos:</div>
+        <div id="dinero-pesos">0</div>
+        <div id="saldo-devcoins">Devcoins:</div>
+        <div id="dinero-devcoins">0</div>
+    </header>
+
+    <section id="tragamonedas">
+        <div class="casilla">
+            <div class="imagen">
+                <img src="https://i.pinimg.com/1200x/c8/9b/c1/c89bc1cd1b860aa9639a989d1392ca85.jpg" alt="">
+            </div>
+        </div>
+        <div class="casilla">
+            <div class="imagen">
+                <img src="https://i.pinimg.com/1200x/c8/9b/c1/c89bc1cd1b860aa9639a989d1392ca85.jpg" alt="">
+            </div>
+        </div>
+        <div class="casilla">
+            <div class="imagen">
+                <img src="https://i.pinimg.com/1200x/c8/9b/c1/c89bc1cd1b860aa9639a989d1392ca85.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <div id="iniciar">Lanzar</div>
+
+    <div id="cambiar_monedas">
+        <h2>Ingrese la cantidad de pesos que quiere ingresar en la pagina</h2>
+        <input type="number" id="pesos" min="1" max="9999">
+        <input type="button" id="boton_cambiar" value="ingresar pesos" onclick="ingresarPesos()">
+    </div>
+
+    <div id="ingresar_pesos">
+        <h2>Ingrese la cantidad de pesos que quiere cambiar por Devcoins</h2>
+        <input type="number" id="pesos_ingresados" min="1" max="9999" >
+        <input type="button" id="boton_" value="Cambiar pesos" onclick="convertir()">
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
