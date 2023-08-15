@@ -86,19 +86,34 @@ img {
     text-align: center;
 }
 
-#cambiar_monedas {
+#cambiar-monedas {
     display: flex;
     padding-top: 2em;
     flex-direction: column;
 }
 
-#boton_cambiar{
+#ingresar-pesos {
+
+    display: flex;
+    padding-top: 2em;
+    flex-direction: column;
+}
+
+#boton-cambiar {
     display: flex;
     width: 110px;
     justify-content: center;
     cursor: pointer;
 }
-#pesos{
+
+#boton-ingresar {
+    display: flex;
+    width: 110px;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#pesos-ingresados {
     display: flex;
     flex-direction: column;
     width: 165px;

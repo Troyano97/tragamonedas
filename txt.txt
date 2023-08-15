@@ -1,0 +1,1 @@
+agregamos la variable imagenCambiar y le decimos que es igual al elemento con el nombre de: "imagen" y 

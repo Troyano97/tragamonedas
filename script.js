@@ -11,7 +11,7 @@ const imagenes = [
 ]
 
 function lanzar() {
-    document.getElementById("iniciar").onclick = lanzar;
+    document.getElementById("iniciar").onclick = tirar;
 }
 
 
@@ -71,10 +71,11 @@ function convertir() {
 }
 
 function ingresarPesos() {
-    var valorIngresadoPesos = parseFloat(document.getElementById("pesos_ingresados").value);
+    var valorIngresadoPesos = parseFloat(document.getElementById("pesos-ingresados").value);
     if (isNaN(valorIngresadoPesos) || valorIngresadoPesos === 0) {
         alert("Ingresa un valor entre 1 y 9999 en pesos.");
     } else {
         document.getElementById("dinero-pesos").textContent = valorIngresadoPesos.toFixed(0);
     }
 }
+
