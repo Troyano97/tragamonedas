@@ -41,7 +41,7 @@ function cambiar_imagen(num, img) {
 }
 
 
- // verifica que la posicion de las imagenes sea iguales en los 3 casos y en caso de ser correcta saldra un alert
+// verifica que la posicion de las imagenes sea iguales en los 3 casos y en caso de ser correcta saldra un alert
 function verificar_premio() {
     if (numImagen[0] === numImagen[1] && numImagen[1] === numImagen[2]) {
         alert("ganaste");
@@ -52,15 +52,22 @@ function verificar_premio() {
 //inicializa la funcion lanzar
 lanzar();
 
-
 // convierte los pesos a devcoins
 function convertir() {
-    var valorp = parseFloat(document.getElementById("pesos").value);
-    if (isNaN(valorp) || valorp == 0) {
+    var valorP = parseFloat(document.getElementById("pesos-convertir").value);
+    if (isNaN(valorP) || valorP === 0) {
         alert("Ingresa un valor válido en pesos antes de convertir.");
         return;
     }
-    var devcoins = valorp / 3;
+
+    var saldoPesos = parseFloat(document.getElementById("dinero-pesos").textContent);
+
+    if (valorP > saldoPesos) {
+        alert("No dispones de esa cantidad de pesos para realizar la conversión");
+        return;
+    }
+
+    var devcoins = valorP / 3;
 
     // actualiza el div con el saldo en devcoins
     var saldoDevcoins = parseFloat(document.getElementById("dinero-devcoins").textContent);
@@ -68,6 +75,10 @@ function convertir() {
 
     // actualiza los devcoins y los limita a 2 decimales
     document.getElementById("dinero-devcoins").textContent = saldoDevcoins.toFixed(2);
+
+    saldoPesos -= valorP;
+
+    document.getElementById("dinero-pesos").textContent = saldoPesos.toFixed(0);
 }
 
 function ingresarPesos() {

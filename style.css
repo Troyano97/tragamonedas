@@ -93,7 +93,6 @@ img {
 }
 
 #ingresar-pesos {
-
     display: flex;
     padding-top: 2em;
     flex-direction: column;
@@ -114,6 +113,13 @@ img {
 }
 
 #pesos-ingresados {
+    display: flex;
+    flex-direction: column;
+    width: 165px;
+    justify-content: center;
+}
+
+#pesos-convertir {
     display: flex;
     flex-direction: column;
     width: 165px;
