@@ -1,11 +1,11 @@
 const imagenes = [
-    { nombre: "limon", url: "https://static.vecteezy.com/system/resources/previews/013/358/473/non_2x/lemon-fruit-logo-design-vector.jpg" },
-    { nombre: "campana", url: "https://static.vecteezy.com/system/resources/previews/007/063/099/non_2x/bell-icon-isolated-on-white-background-free-vector.jpg" },
-    { nombre: "diamante", url: "https://static.vecteezy.com/system/resources/previews/019/526/301/original/diamond-slot-game-color-icon-illustration-vector.jpg" },
-    { nombre: "cereza", url: "https://static.vecteezy.com/system/resources/previews/008/688/083/non_2x/cherry-icon-free-vector.jpg" },
-    { nombre: "herradura", url: "https://static.vecteezy.com/system/resources/previews/003/030/499/non_2x/golden-horseshoe-in-cartoon-style-illustration-isolated-vector.jpg" },
-    { nombre: "uva", url: "https://static.vecteezy.com/system/resources/previews/007/697/457/non_2x/a-mouth-watering-isometric-icon-of-grapes-vector.jpg" },
-    { nombre: "bar", url: "https://cdn4.iconfinder.com/data/icons/slot-machines/512/Bar-512.png" }
+    { nombre: "limon", url: "./imagenes/limon.jpg" },
+    { nombre: "campana", url: "./imagenes/campana.jpg" },
+    { nombre: "diamante", url: "./imagenes/diamante.jpg" },
+    { nombre: "cereza", url: "./imagenes/cereza.jpg" },
+    { nombre: "herradura", url: "./imagenes/herradura.jpg" },
+    { nombre: "uva", url: "./imagenes/uva.jpg" },
+    { nombre: "bar", url: "./imagenes/bar.png" }
 ];
 
 function lanzar() {
