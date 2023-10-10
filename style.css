@@ -40,6 +40,7 @@ body {
 }
 
 
+
 #tragamonedas {
     display: flex;
     justify-content: center;
@@ -56,6 +57,7 @@ body {
     border-radius: 10px;
     border: 3px solid #833939;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 0;
 }
 
 #lista-jugadas {
@@ -71,7 +73,8 @@ body {
 
 .imagen-historial {
     margin-right: 10px;
-    max-width: 50px; /* Ajusta el tamaño máximo de las imágenes */
+    max-width: 50px;
+    /* Ajusta el tamaño máximo de las imágenes */
 }
 
 
@@ -90,7 +93,7 @@ body {
     background-color: white;
     justify-content: center;
     border: solid 4px rgb(110, 10, 10);
-    border-radius:50px;
+    border-radius: 50px;
     padding: 20px;
 }
 
@@ -121,12 +124,14 @@ img {
     display: flex;
     padding-top: 2em;
     flex-direction: column;
+    color: white;
 }
 
 #ingresar-pesos {
     display: flex;
     padding-top: 2em;
     flex-direction: column;
+    color: white;
 }
 
 #boton-cambiar {
